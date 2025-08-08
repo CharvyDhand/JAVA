@@ -1,4 +1,4 @@
-public class p2throw {
+public class p3customException {
     public static void main(String[] args) {
         int i=0;
         int j;
@@ -6,11 +6,16 @@ public class p2throw {
             // j=12/i;
             j=0;
             if(j==0){
-                throw new ArithmeticException("It was zero ");
+                throw new NewException("It was zero ");
             }
-        }catch(ArithmeticException e){
+        }catch(NewException e){
             j=1;
             System.out.println("this is default value"+e);
         }
     }    
+}
+class NewException extends Exception{
+    public NewException(String string){
+        super(string);
+    }
 }
