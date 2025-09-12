@@ -6,7 +6,7 @@
 // Replace a student’s name at a given index.
 // Display the total number of students.
 import java.util.*;
-public class P01basics {
+public class P01arraylist{
     public static void main(String[] args){
         // Collection<String> name=new ArrayList<>();
         List<Integer> num=new ArrayList<>(Arrays.asList(1,2,3));
