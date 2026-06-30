@@ -10,6 +10,7 @@ public class twosum{
         }
     }
 }
+
 class Solution{
     public int[] twosumsol(int[] a, int target){
         HashMap <Integer, Integer> map = new HashMap<>();
@@ -21,6 +22,7 @@ class Solution{
             }
             map.put(a[i],i);
         }
+        System.out.println("hello");
         return new int[]{};
     }
 }
